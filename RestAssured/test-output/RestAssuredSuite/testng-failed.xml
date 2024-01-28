@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RestAssuredSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="RestAssuredTest(failed)">
+    <classes>
+      <class name="Cyshield.RestAssured.api_test">
+        <methods>
+          <include name="testUpdateRequest"/>
+          <include name="testGetRequest"/>
+          <include name="testPostRequest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Cyshield.RestAssured.api_test -->
+    </classes>
+  </test> <!-- RestAssuredTest(failed) -->
+</suite> <!-- Failed suite [RestAssuredSuite] -->
